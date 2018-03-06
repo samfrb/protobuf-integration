@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "AElf.Kernel";
+
+import "Account.proto";
+
+message ProtoTransaction
+{
+    ProtoAccount From = 1;
+}
