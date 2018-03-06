@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartialClasses", "PartialClasses\PartialClasses.csproj", "{1EB465EC-4D0E-48B4-9299-2A9B01C86D97}"
 EndProject
@@ -11,6 +11,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AElfSerializer.Test", "AElfSerializer.Test\AElfSerializer.Test.csproj", "{34BD8CC5-F8D3-4ADE-BA55-6C266634669B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AElfKernelTypes", "AElfKernelTypes\AElfKernelTypes.csproj", "{8EDC1C9E-56D7-4F7F-840C-263BB0180006}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartialClasses.Test", "PartialClasses.Test\PartialClasses.Test.csproj", "{3D0937AA-8FAD-4606-BFE6-03578ECE27A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,5 +44,9 @@ Global
 		{8EDC1C9E-56D7-4F7F-840C-263BB0180006}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EDC1C9E-56D7-4F7F-840C-263BB0180006}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EDC1C9E-56D7-4F7F-840C-263BB0180006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D0937AA-8FAD-4606-BFE6-03578ECE27A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0937AA-8FAD-4606-BFE6-03578ECE27A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0937AA-8FAD-4606-BFE6-03578ECE27A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0937AA-8FAD-4606-BFE6-03578ECE27A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
