@@ -1,0 +1,13 @@
+.idea/.idea.protobuf-solutions/riderModule.iml
+.idea/.idea.protobuf-solutions/.idea/contentModel.xml
+.idea/.idea.protobuf-solutions/.idea/indexLayout.xml
+.idea/.idea.protobuf-solutions/.idea/modules.xml
+.idea/.idea.protobuf-solutions/.idea/workspace.xml
+AElfSerializer.Test/obj/*
+AElfSerializer.Testing/bin
+AElfSerializer.Testing/obj
+AElfSerializer.Tests/bin
+AElfKernelTypes/obj
+bin
+obj
+packages
