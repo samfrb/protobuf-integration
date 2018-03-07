@@ -3,7 +3,6 @@ using Google.Protobuf;
 
 namespace WrapperClass
 {
-
     public class Account : IAccount
     {
         private ProtoAccount _protoAccount;

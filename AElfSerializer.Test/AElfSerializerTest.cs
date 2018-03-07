@@ -1,38 +1,32 @@
 using System;
 using AElf.Kernel;
 using Google.Protobuf;
-using Mapster;
 using Xunit;
 
-namespace AElfSerializer.Testing
+namespace AElfSerializer.Test
 {
     public class AElfSerializerTest
     {
-        private void SetupMapper()
-        {
-            TypeAdapterConfig<IAccount, ProtoAccount>
-                .NewConfig()
-                .Map(dest => dest.PAddress,
-                    src => ByteString.CopyFrom(src.Address));
-        }
-        
+        /// <summary>
+        /// Usage for serializing and deserializing an account
+        /// </summary>
         [Fact]
         public void DeserializeAccount()
         {
             IAElfSerializer serializer = new ProtobufSerializer();
             
             /* Create account and print adress */
-            IAccount account = new Account();
-            account.Address = GetRandomBytes(10);
-            PrintBytes(account.Address);
+            ProtoAccount account = new ProtoAccount();
+            account.PAddress = ByteString.CopyFrom(GetRandomBytes(10));
+            PrintBytes(account.PAddress.ToByteArray());
             
             /* Serialize and print */
             byte[] serializedAccount = serializer.Serialize(account);
             PrintBytes(serializedAccount);
             
             /* Deserialize and check address */
-            //IAccount deserializedAcc = serializer.DeserializeAccount(serializedAccount);
-            //PrintBytes(deserializedAcc.Address);
+            ProtoAccount deserializedAcc = serializer.Deserialize<ProtoAccount>(serializedAccount);
+            PrintBytes(deserializedAcc.PAddress.ToByteArray());
         }
 
         private void PrintBytes(byte[] bytes)
